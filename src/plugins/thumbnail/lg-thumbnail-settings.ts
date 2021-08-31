@@ -74,6 +74,12 @@ export interface ThumbnailsSettings {
      */
     //@todo add demo
     youTubeThumbSize: number;
+
+    /**
+     * You can enable lazy loading image when use Lazysizes. https://github.com/aFarkas/lazysizes
+     */
+    //@todo add demo
+    lazysizes: boolean;
 }
 
 export const thumbnailsSettings: ThumbnailsSettings = {
@@ -96,4 +102,6 @@ export const thumbnailsSettings: ThumbnailsSettings = {
 
     loadYouTubeThumbnail: true,
     youTubeThumbSize: 1,
+
+    lazysizes: false
 };

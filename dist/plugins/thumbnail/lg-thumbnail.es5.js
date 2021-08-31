@@ -46,6 +46,7 @@ var thumbnailsSettings = {
     thumbnailSwipeThreshold: 10,
     loadYouTubeThumbnail: true,
     youTubeThumbSize: 1,
+    lazysizes: false
 };
 
 /**
@@ -401,7 +402,7 @@ var Thumbnail = /** @class */ (function () {
         else {
             thumbImg = thumb;
         }
-        return "<div data-lg-item-id=\"" + index + "\" class=\"lg-thumb-item " + (index === this.core.index ? ' active' : '') + "\" \n        style=\"width:" + this.settings.thumbWidth + "px; height: " + this.settings.thumbHeight + ";\n            margin-right: " + this.settings.thumbMargin + "px;\">\n            <img data-lg-item-id=\"" + index + "\" data-src=\"" + thumbImg + "\" class=\"lazyload\" />\n        </div>";
+        return "<div data-lg-item-id=\"" + index + "\" class=\"lg-thumb-item " + (index === this.core.index ? ' active' : '') + "\" \n        style=\"width:" + this.settings.thumbWidth + "px; height: " + this.settings.thumbHeight + ";\n            margin-right: " + this.settings.thumbMargin + "px;\">\n            <img data-lg-item-id=\"" + index + "\" " + (this.settings.lazysizes ? "data-src=\"" + thumbImg + "\" class=\"lazyload\"" : "src=\"" + thumbImg + "\"") + " />\n        </div>";
     };
     Thumbnail.prototype.getThumbItemHtml = function (items) {
         var thumbList = '';

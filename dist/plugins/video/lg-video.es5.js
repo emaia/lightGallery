@@ -1,5 +1,5 @@
 /*!
- * lightgallery | 2.2.0 | August 20th 2021
+ * lightgallery | 2.2.0 | August 31st 2021
  * http://www.lightgalleryjs.com/
  * Copyright (c) 2020 Sachin Neravath;
  * @license GPLv3
@@ -434,5 +434,5 @@ var Video = /** @class */ (function () {
     return Video;
 }());
 
-export default Video;
+export { Video as default };
 //# sourceMappingURL=lg-video.es5.js.map

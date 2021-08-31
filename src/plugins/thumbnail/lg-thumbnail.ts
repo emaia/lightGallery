@@ -432,7 +432,7 @@ export default class Thumbnail {
             this.settings.thumbHeight
         };
             margin-right: ${this.settings.thumbMargin}px;">
-            <img data-lg-item-id="${index}" src="${thumbImg}" />
+            <img data-lg-item-id="${index}" data-src="${thumbImg}" class="lazyload" />
         </div>`;
     }
 

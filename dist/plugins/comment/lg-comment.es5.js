@@ -1,5 +1,5 @@
 /*!
- * lightgallery | 2.2.0 | August 20th 2021
+ * lightgallery | 2.2.0 | August 31st 2021
  * http://www.lightgalleryjs.com/
  * Copyright (c) 2020 Sachin Neravath;
  * @license GPLv3
@@ -195,5 +195,5 @@ var CommentBox = /** @class */ (function () {
     return CommentBox;
 }());
 
-export default CommentBox;
+export { CommentBox as default };
 //# sourceMappingURL=lg-comment.es5.js.map

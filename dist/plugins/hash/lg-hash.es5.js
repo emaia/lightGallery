@@ -1,5 +1,5 @@
 /*!
- * lightgallery | 2.2.0 | August 20th 2021
+ * lightgallery | 2.2.0 | August 31st 2021
  * http://www.lightgalleryjs.com/
  * Copyright (c) 2020 Sachin Neravath;
  * @license GPLv3
@@ -191,5 +191,5 @@ var Hash = /** @class */ (function () {
     return Hash;
 }());
 
-export default Hash;
+export { Hash as default };
 //# sourceMappingURL=lg-hash.es5.js.map

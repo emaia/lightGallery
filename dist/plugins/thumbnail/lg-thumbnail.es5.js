@@ -1,5 +1,5 @@
 /*!
- * lightgallery | 2.2.0 | August 20th 2021
+ * lightgallery | 2.2.0 | August 31st 2021
  * http://www.lightgalleryjs.com/
  * Copyright (c) 2020 Sachin Neravath;
  * @license GPLv3
@@ -401,7 +401,7 @@ var Thumbnail = /** @class */ (function () {
         else {
             thumbImg = thumb;
         }
-        return "<div data-lg-item-id=\"" + index + "\" class=\"lg-thumb-item " + (index === this.core.index ? ' active' : '') + "\" \n        style=\"width:" + this.settings.thumbWidth + "px; height: " + this.settings.thumbHeight + ";\n            margin-right: " + this.settings.thumbMargin + "px;\">\n            <img data-lg-item-id=\"" + index + "\" src=\"" + thumbImg + "\" />\n        </div>";
+        return "<div data-lg-item-id=\"" + index + "\" class=\"lg-thumb-item " + (index === this.core.index ? ' active' : '') + "\" \n        style=\"width:" + this.settings.thumbWidth + "px; height: " + this.settings.thumbHeight + ";\n            margin-right: " + this.settings.thumbMargin + "px;\">\n            <img data-lg-item-id=\"" + index + "\" data-src=\"" + thumbImg + "\" class=\"lazyload\" />\n        </div>";
     };
     Thumbnail.prototype.getThumbItemHtml = function (items) {
         var thumbList = '';
@@ -471,5 +471,5 @@ var Thumbnail = /** @class */ (function () {
     return Thumbnail;
 }());
 
-export default Thumbnail;
+export { Thumbnail as default };
 //# sourceMappingURL=lg-thumbnail.es5.js.map
